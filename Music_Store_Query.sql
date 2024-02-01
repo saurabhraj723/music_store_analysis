@@ -187,8 +187,6 @@ WHERE sales_per_country.purchases_per_genre = max_genre_per_country.max_genre_nu
 Write a query that returns the country along with the top customer and how much they spent. 
 For countries where the top amount spent is shared, provide all customers who spent this amount. */
 
-/* Steps to Solve:  Similar to the above question. There are two parts in question- 
-first find the most spent on music for each country and second filter the data for respective customers. */
 
 /* Method 1: using CTE */
 
@@ -225,6 +223,5 @@ WHERE cc.total_spending = ms.max_spending
 ORDER BY 1;
 
 
-/* source: www.youtube.com/@RishabhMishraOfficial */
 
-/* Thank You :) */
+
